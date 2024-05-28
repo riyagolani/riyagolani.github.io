@@ -58,6 +58,13 @@ export const targetElements = [
     },
   },
   {
+    element: ".opensource-wrapper__table",
+    animation: {
+      delay: 800,
+      origin: "bottom",
+    },
+  },
+  {
     element: ".contact-wrapper",
     animation: {
       delay: 800,
