@@ -20,6 +20,19 @@
 <body>
   <div id="top"></div>
 
+  <!-- **** Horizontal Navigation Bar ****  -->
+  <nav class="horizontal-nav">
+    <ul>
+      <li><a href="#about">Introduction</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#open-source-contributions">Open Source Contributions</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#footer">Contact</a></li>
+      <li><a href="assets/resume.pdf">Resume</a></li>
+    </ul>
+  </nav>
+  <!-- /END Horizontal Navigation Bar -->
+
   <!-- **** Hero Section **** -->
   <section id="hero" class="jumbotron">
     <div class="container">
@@ -76,7 +89,7 @@
   <section id="projects">
     <div class="container">
       <div class="project-wrapper">
-        <h2 class="section-title dark-blue-text">Projects</h2>
+        <h2 class="section-title load-hidden">Projects</h2>
 
         <!-- Notice: each .row is a project -->
         <div class="row">
@@ -178,62 +191,102 @@
               <td>Rubrik</td>
               <td>Collaborated in developing integration of Rubrik Polaris on Cortex XSOAR platform, including playbook
                 for anomaly analysis.</td>
-              <td><a class="cta-btn cta-btn--hero"  href="https://github.com/demisto/content/blob/aa5097a1135b6b6bd1aab12c7431969b9ccf5e18/Packs/RubrikPolaris">Content-Pack</a></td>
+              <td><a class="cta-btn cta-btn--hero"
+                  href="https://github.com/demisto/content/blob/aa5097a1135b6b6bd1aab12c7431969b9ccf5e18/Packs/RubrikPolaris">Content-Pack</a>
+              </td>
             </tr>
             <tr>
               <td>Flashpoint</td>
               <td>Contributed to the development of the content pack for integrating threat intelligence from Flashpoint
                 into Cortex XSOAR. The integration helps determine risks and remediate compromised credentials using
                 playbook.</td>
-              <td><a class="cta-btn cta-btn--hero"  href="https://github.com/demisto/content/tree/a3f8f071020fd8b42523c6f7bf31c66f8769fc61/Packs/Flashpoint">Content-Pack</a></td>
+              <td><a class="cta-btn cta-btn--hero"
+                  href="https://github.com/demisto/content/tree/a3f8f071020fd8b42523c6f7bf31c66f8769fc61/Packs/Flashpoint">Content-Pack</a>
+              </td>
             </tr>
             <tr>
               <td>GreyNoise</td>
               <td>Developed integration to leverage GreyNoise's internet background noise data in Cortex XSOAR
                 workflows. Fixed critical bugs in previous versions.</td>
-              <td><a class="cta-btn cta-btn--hero"  href="https://github.com/demisto/content/tree/a3f8f071020fd8b42523c6f7bf31c66f8769fc61/Packs/GreyNoise">Content-Pack</a></td>
+              <td><a class="cta-btn cta-btn--hero"
+                  href="https://github.com/demisto/content/tree/a3f8f071020fd8b42523c6f7bf31c66f8769fc61/Packs/GreyNoise">Content-Pack</a>
+              </td>
             </tr>
             <tr>
               <td>BitSight</td>
               <td>Collaborated on the development of BitSight integration for security performance management within
                 Cortex XSOAR and playbook to determine IP reputation.</td>
-              <td><a class="cta-btn cta-btn--hero" href="https://github.com/demisto/content/tree/a3f8f071020fd8b42523c6f7bf31c66f8769fc61/Packs/BitSight">Content-Pack</a></td>
+              <td><a class="cta-btn cta-btn--hero"
+                  href="https://github.com/demisto/content/tree/a3f8f071020fd8b42523c6f7bf31c66f8769fc61/Packs/BitSight">Content-Pack</a>
+              </td>
             </tr>
           </tbody>
         </table>
         <div class="col-lg-8 col-sm-12">
-        <p class="opensource-wrapper____additional-info">
-          Additionally, I enhanced the Rubrik SDK for the Rubrik Polaris integration, developing custom <span style="font-weight: bold; font-size:medium; margin-bottom: 3rem;">GraphQL</span> mutations and queries. 
-          I built a streamlined framework for query execution, data retrieval, and server-side API processing. Additional improvements include enhancing authentication and optimizing query retrieval for seamless 
-          access and reduced response times.
-        </p></div>
-        <p><a class="cta-btn cta-btn--hero" href="https://github.com/riyagolani/palo-alto-cortex-xsoar-contributions">More Details</a></p>
+          <p class="opensource-wrapper____additional-info">
+            Additionally, I enhanced the Rubrik SDK for the Rubrik Polaris integration, developing custom <span
+              style="font-weight: bold; font-size:medium; margin-bottom: 3rem;">GraphQL</span> mutations and queries.
+            I built a streamlined framework for query execution, data retrieval, and server-side API processing.
+            Additional improvements include enhancing authentication and optimizing query retrieval for seamless
+            access and reduced response times.
+          </p>
+        </div>
+        <p><a class="cta-btn cta-btn--hero"
+            href="https://github.com/riyagolani/palo-alto-cortex-xsoar-contributions">More Details</a></p>
       </div>
     </div>
   </section>
   <!-- /END Open Source Contributions Section -->
 
-  <!-- **** Contact Section **** -->
-  <section id="contact">
+
+  <!-- **** Experience Section **** -->
+  <section id="experience">
     <div class="container">
-      <h2 class="section-title">Contact</h2>
-      <div class="contact-wrapper load-hidden">
-        <p class="contact-wrapper__text">riya.s.golani@gmail.com</p>
-        <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--resume"
-          href="mailto:riya.s.golani@gmail.com">Email</a>
-      </div>
+        <h2 class="section-title">Experience</h2>
+
+        <div class="experience-item">
+          <div class="experience-item__text">
+            <h3 class="experience-item__text-title">Software Engineer | Crest Data Systems</h3>
+            <div class="experience-item__text-duration">Jan 2021 - June 2023</div>
+            <div>
+                Utilizing Python, I integrated third-party APIs to enhance threat incident retrieval on the Palo Alto Cortex XSOAR platform. 
+                Spearheading the automation of remediation processes, I crafted data visualization dashboards for threat incidents, 
+                significantly bolstering organizational safety by 40%. Additionally, my key role in developing a high-performance 
+                SDK ensured scalability and enabled swift query retrieval of over 10,000 processed data in each API call.
+             
+            </div>
+          </div>
+        </div>
+
+        <div class="experience-item">
+          <div class="experience-item__text">
+            <h3 class="experience-item__text-title">Software Engineering Intern | Seedomics Inc</h3>
+            <div class="experience-item__text-duration">August 2020 - December 2020</div>
+            <div>
+              Led a team of four engineers in orchestrating the development of a Python-based Selenium bot, which automated the scraping, 
+              analysis, and organization of over 90,000 global clinical trials data. Utilized advanced data parsing techniques and implemented 
+              efficient data scraping methodologies to optimize accessibility, leading to a notable 60% increase in patient engagement with 
+              critical clinical trial information.
+             
+            </div>
+          </div>
+        </div>
+
     </div>
   </section>
-  <!-- /END Contact Section -->
+
+  <!-- /END Experience Section -->
 
   <!-- **** Footer Section **** -->
-  <footer class="footer navbar-static-bottom">
+  <footer class="footer navbar-static-bottom" id="footer">
     <div class="container">
       <a rel="noreferrer" href="#top" class="back-to-top">
         <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
       </a>
       <div class="social-links">
-
+        <a rel="noreferrer" href="mailto:riya.s.golani@gmail.com">
+          <i class="fa fa-envelope fa-inverse" alt="riya.s.golani@gmail.com"></i>
+        </a>
         <a rel="noreferrer" href="https://www.linkedin.com/in/riya-golani/" target="_blank">
           <i class="fa fa-linkedin fa-inverse"></i>
         </a>
@@ -248,8 +301,6 @@
         © 2024
         <a rel="noreferrer" href="" target="_blank">Riya Golani</a>
       </p>
-
-
     </div>
   </footer>
   <!-- /END Footer Section -->

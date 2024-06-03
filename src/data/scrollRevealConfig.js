@@ -65,10 +65,10 @@ export const targetElements = [
     },
   },
   {
-    element: ".contact-wrapper",
+    element: ".experience-item",
     animation: {
       delay: 800,
-      origin: "bottom",
+      origin: window.innerWidth > 768 ? "right" : "bottom",
     },
   },
 ];

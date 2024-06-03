@@ -7,65 +7,70 @@
     border-top: 0px;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-  
+
     @include respond(tab-land) {
-      -webkit-clip-path: none;
-      clip-path: none;
+        -webkit-clip-path: none;
+        clip-path: none;
     }
-  
+
     .opensource-wrapper {
         margin-bottom: 15rem;
         justify-content: center;
-      
-  
-      &__table {
-        width: 80%;
-        margin-bottom: 2rem;
-        border-collapse: collapse;
-        font-size: $default-font-size;
-        color: $white-color;
-  
-        thead {
-          background-color: $secondary-color;
-          color: $white-color;
+
+
+        &__table {
+            width: 80%;
+            margin-bottom: 2rem;
+            border-collapse: collapse;
+            font-size: $default-font-size;
+            border: 0.2px solid $dark-grey;
+
+            thead {
+
+                border-bottom: 0.2px solid $dark-grey;
+                background-color: $primary-color;
+            }
+
+            tbody {
+                tr {
+
+                    background-color: $primary-color;
+
+                    color: $dark-grey;
+                }
+            }
+
+            th,
+            td {
+
+                padding: 1rem;
+            }
+
+            th {
+
+                text-align: center;
+            }
+
+            a {
+                color: $white-color;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
         }
-  
-        tbody {
-          tr{
-            background-color: $primary-color;
-            color: $dark-grey;
-          }
+
+        &__additional-info {
+            width: 80%;
+            font-size: $default-font-size;
+            color: $white-color;
+
+            a {
+                color: $secondary-color;
+                text-decoration: none;
+
+            }
         }
-  
-        th, td {
-          padding: 1rem;
-        }
-  
-        th {
-          text-align: center;
-        }
-  
-        a {
-          color: $white-color;
-          text-decoration: none;
-  
-          &:hover {
-            text-decoration: underline;
-          }
-        }
-      }
-  
-      &__additional-info {
-        width: 80%;
-        font-size: $default-font-size;
-        color: $white-color;
-  
-        a {
-          color: $secondary-color;
-          text-decoration: none;
-  
-        }
-      }
     }
-  }
-  
+}

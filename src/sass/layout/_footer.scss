@@ -5,11 +5,13 @@
 
   @include respond(phone) {
     border: 0px;
+    margin-bottom: 20px;
   }
 
   &__text {
     color: darken($white-color, 50%);
     font-size: 1.3rem;
+    margin-bottom: 50px;
 
     a {
       color: darken($white-color, 50%);
