@@ -95,6 +95,44 @@
         <div class="row">
           <div class="col-lg-8 col-sm-12">
             <div class="project-wrapper__text load-hidden">
+              <h3 class="project-wrapper__text-title">Image Tag Gallery</h3>
+              <div>
+                <p class="mb-4">
+                  A full-stack application that allows you to upload an image and uses Google Cloud
+                  Vision API to generate tags corresponding to the image. Those tags serve as metadata for the image
+                  that can be searched for. The backend consists of REST APIs to upload, process and search for images developed
+                  using Express and images are stored in AWS S3 for accessibility.
+                  The frontend, developed using React, allows users to upload an image and view the image along with the
+                  metadata in the image gallery and search for a specific tag.
+                  <br><span style="font-weight: bold; font-size:medium; margin-bottom: 3rem;"> Tech Stack: React,
+                    Express, Google Cloud Vision API, AWS S3</span>
+
+                </p>
+              </div>
+              <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero"
+                href="https://image-tag-gallery.netlify.app">
+                View Here
+              </a>
+
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-12">
+            <div class="project-wrapper__image load-hidden">
+              <a rel="noreferrer" href="https://image-tag-gallery.netlify.app" target="_blank">
+                <div data-tilt data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5"
+                  class="thumbnail rounded js-tilt">
+                  <img alt="Project Image" class="img-fluid" src="assets/project.png" />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- /END Project -->
+
+        <!-- Notice: each .row is a project -->
+        <div class="row">
+          <div class="col-lg-8 col-sm-12">
+            <div class="project-wrapper__text load-hidden">
               <h3 class="project-wrapper__text-title">Party Picasso</h3>
               <div>
                 <p class="mb-4">
@@ -242,35 +280,41 @@
   <!-- **** Experience Section **** -->
   <section id="experience">
     <div class="container">
-        <h2 class="section-title">Experience</h2>
+      <h2 class="section-title">Experience</h2>
 
-        <div class="experience-item">
-          <div class="experience-item__text">
-            <h3 class="experience-item__text-title">Software Engineer | Crest Data Systems</h3>
-            <div class="experience-item__text-duration">Jan 2021 - June 2023</div>
-            <div>
-                Utilizing Python, I integrated third-party APIs to enhance threat incident retrieval on the Palo Alto Cortex XSOAR platform. 
-                Spearheading the automation of remediation processes, I crafted data visualization dashboards for threat incidents, 
-                significantly bolstering organizational safety by 40%. Additionally, my key role in developing a high-performance 
-                SDK ensured scalability and enabled swift query retrieval of over 10,000 processed data in each API call.
-             
-            </div>
+      <div class="experience-item">
+        <div class="experience-item__text">
+          <h3 class="experience-item__text-title">Software Engineer | Crest Data Systems</h3>
+          <div class="experience-item__text-duration">Jan 2021 - June 2023</div>
+          <div>
+            Utilizing Python, I integrated third-party APIs to enhance threat incident retrieval on the Palo Alto Cortex
+            XSOAR platform.
+            Spearheading the automation of remediation processes, I crafted data visualization dashboards for threat
+            incidents,
+            significantly bolstering organizational safety by 40%. Additionally, my key role in developing a
+            high-performance
+            SDK ensured scalability and enabled swift query retrieval of over 10,000 processed data in each API call.
+
           </div>
         </div>
+      </div>
 
-        <div class="experience-item">
-          <div class="experience-item__text">
-            <h3 class="experience-item__text-title">Software Engineering Intern | Seedomics Inc</h3>
-            <div class="experience-item__text-duration">August 2020 - December 2020</div>
-            <div>
-              Led a team of four engineers in orchestrating the development of a Python-based Selenium bot, which automated the scraping, 
-              analysis, and organization of over 90,000 global clinical trials data. Utilized advanced data parsing techniques and implemented 
-              efficient data scraping methodologies to optimize accessibility, leading to a notable 60% increase in patient engagement with 
-              critical clinical trial information.
-             
-            </div>
+      <div class="experience-item">
+        <div class="experience-item__text">
+          <h3 class="experience-item__text-title">Software Engineering Intern | Seedomics Inc</h3>
+          <div class="experience-item__text-duration">August 2020 - December 2020</div>
+          <div>
+            Led a team of four engineers in orchestrating the development of a Python-based Selenium bot, which
+            automated the scraping,
+            analysis, and organization of over 90,000 global clinical trials data. Utilized advanced data parsing
+            techniques and implemented
+            efficient data scraping methodologies to optimize accessibility, leading to a notable 60% increase in
+            patient engagement with
+            critical clinical trial information.
+
           </div>
         </div>
+      </div>
 
     </div>
   </section>
